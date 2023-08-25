@@ -1,0 +1,23 @@
+{
+  "delay": "1500",
+  "events": {
+    "restart": "kill-port 6175",
+    "crash": "kill-port 6175"
+  },
+  "ignore": [
+    "node_modules",
+    "sessions",
+    "logs"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "BABEL_DISABLE_CACHE": 1,
+    "PORT": 6175,
+    "URL": "http://localhost"
+  },
+  "execMap": {
+    "js": "babel-node"
+  },
+  "ext": ".js,.json,.gql",
+  "watch": "./"
+}

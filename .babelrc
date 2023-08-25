@@ -1,0 +1,30 @@
+{
+  "ignore": [
+    "public",
+    "node_modules"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "11"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ]
+  ],
+  "env": {
+    "dev": {
+      "sourceMaps": "inline",
+      "retainLines": true
+    }
+  }
+}
